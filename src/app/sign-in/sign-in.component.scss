@@ -1,0 +1,30 @@
+.full-width{
+    width: 100%;
+}
+
+.sign-in-form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.button-group-2{
+    margin-top: 15px;
+    width: 100%;
+    button{
+        width: 100%;
+    }
+}

@@ -1,0 +1,14 @@
+.full-width{
+    width: 100%;
+}
+
+.sign-up-form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

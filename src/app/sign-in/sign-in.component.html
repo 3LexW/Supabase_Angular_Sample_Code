@@ -1,0 +1,70 @@
+<h1 class="sign-in-form" *ngIf="isLoading; else signInFormTemplate">
+  Loading...
+</h1>
+
+<ng-template #signInFormTemplate>
+  <div class="sign-in-form">
+    <form [formGroup]="signInForm">
+      <h1>Sign In</h1>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>email</mat-label>
+        <input
+          matInput
+          placeholder="email"
+          type="email"
+          required
+          formControlName="email"
+        />
+        <mat-error *ngIf="signInForm.get('email').hasError('required')">
+          email is required
+        </mat-error>
+        <mat-error *ngIf="signInForm.get('email').hasError('email')">
+          email is invalid
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>password</mat-label>
+        <input
+          matInput
+          placeholder="password"
+          type="password"
+          required
+          formControlName="password"
+        />
+        <mat-error *ngIf="signInForm.get('password').hasError('required')">
+          password is required
+        </mat-error>
+      </mat-form-field>
+
+      <div class="button-group">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="!signInForm.valid"
+          (click)="onSignInButtonClick()"
+        >
+          Sign In
+        </button>
+        <button
+          mat-raised-button
+          color="primary"
+          (click)="onSignInButtonClick()"
+        >
+          Sign Up
+        </button>
+      </div>
+    </form>
+
+    <div class="button-group-2">
+      <button
+        mat-raised-button
+        color="info"
+        (click)="onGitHubSignInButtonClick()"
+      >
+        Sign in with GitHub
+      </button>
+    </div>
+  </div>
+</ng-template>
