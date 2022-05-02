@@ -1,5 +1,7 @@
 # My Blog
-This code example is for my blog post "淺嘗 Supabase (2) - 從用戶授權(Auth)開始" on Medium. The blog post is in Traditional Chinese, feel free to visit my Medium at https://3lexw.medium.com.
+This code example is for my blog post on Medium. The blog post is in Traditional Chinese, feel free to visit my Medium at https://3lexw.medium.com.
+- [淺嘗 Supabase (2) - 從用戶授權(Auth)開始](https://3lexw.medium.com/%E6%B7%BA%E5%98%97-supabase-2-%E5%BE%9E%E7%94%A8%E6%88%B6%E6%8E%88%E6%AC%8A-auth-%E9%96%8B%E5%A7%8B-c79c8d5ffbe3)
+- [淺嘗 Supabase (3) — 接觸 Database 功能](https://3lexw.medium.com/%E6%B7%BA%E5%98%97-supabase-3-%E6%8E%A5%E8%A7%B8-database-%E5%8A%9F%E8%83%BD-19a9195705a2)
 
 ---
 
