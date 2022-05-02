@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root',
 })
-export class SupabaseService {
+export class SupabaseAuthService {
   private supabase: SupabaseClient;
   constructor() {
     this.supabase = new SupabaseClient(

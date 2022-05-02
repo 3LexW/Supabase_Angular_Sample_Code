@@ -1,0 +1,16 @@
+<h1>Create New Category</h1>
+<mat-form-field appearance="fill" class="full-width">
+  <mat-label>Category Name</mat-label>
+  <input matInput type="text" [(ngModel)]="f.name">
+</mat-form-field>
+<mat-form-field appearance="fill" class="full-width">
+  <input matInput [ngxMatColorPicker]="picker" [(ngModel)]="f.color_code">
+  <mat-label>Label Color</mat-label>
+  <ngx-mat-color-toggle matSuffix [for]="picker"></ngx-mat-color-toggle>
+  <ngx-mat-color-picker #picker color="primary"></ngx-mat-color-picker>
+</mat-form-field>
+<div class="button-bar">
+  <button mat-raised-button color="primary" (click)="onSubmit()">
+    <mat-icon>send</mat-icon> Submit
+  </button>
+</div>

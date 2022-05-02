@@ -7,13 +7,13 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Observable } from 'rxjs';
-import { SupabaseService } from './supabase.service';
+import { SupabaseAuthService } from './services/supabase-auth.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class HomeGuard implements CanActivate {
-  constructor(private supabase: SupabaseService, private router: Router) {}
+  constructor(private supabase: SupabaseAuthService, private router: Router) {}
 
   canActivate(
     route: ActivatedRouteSnapshot,

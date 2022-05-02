@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { SupabaseService } from '../supabase.service';
+import { SupabaseAuthService } from '../services/supabase-auth.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,7 +9,7 @@ import { SupabaseService } from '../supabase.service';
   styleUrls: ['./sign-up.component.scss'],
 })
 export class SignUpComponent implements OnInit {
-  constructor(private supabase: SupabaseService, private router: Router) {}
+  constructor(private supabase: SupabaseAuthService, private router: Router) {}
 
   signUpForm: FormGroup;
   isLoading: boolean = false;
